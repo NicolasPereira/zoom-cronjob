@@ -22,29 +22,37 @@ utilizr o cron do linux.
 ## Como rodar o projeto
 - 1. Clonar o repositório
 ```bash
-    git clone https://github.com/NicolasPereira/zoom-cronjob.git
+    $ git clone https://github.com/NicolasPereira/zoom-cronjob.git
 ```
 
 - 2. Configure as váriaveis `FIST_PERIOD_ARRAY` para as aulas do primeiro periodo e `SECOND_PERIOD_ARRAY` para as aulas do segundo periodo.
 
 - 3. Transforme o arquivo em executável 
 ```bash
-    chmod +x zoom-cron-job.sh
+    $ sudo chmod +x zoom-cron-job.sh
 ```
 
 - 4. Iniciar o serviço de cron no seu computador
 ```bash
-    sudo /etc/init.d/cron start
+    $ sudo /etc/init.d/cron start
 ```
 
 - 5. Configure o job no arquivo principal de cron job com o horário que você precisa para suas reuniões.
 
 ```bash
-    crontab -e
+    $ crontab -e
 ```
 
 Caso você não saiba como funciona o crontab, recomendo este [video](https://www.youtube.com/watch?v=Qf5SPjHzvyw)
 
+- 6. É necessário passar o parametro 0 ou 1, o parametro 0 é referente as reuniões do primeiro periodo e o 1 é para as reuniões do segundo periodo.
+```bash
+    $ ./zoom-cron-job.sh 0
+```
+
+```bash
+    $ ./zoom-cron-job.sh 1
+```
   
 <!-- CONTRIBUTING -->
 
