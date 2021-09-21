@@ -14,8 +14,7 @@
 O ZoomCronJob tem como missão entrar em reuniões no Zoom de forma automática e agendada através de cron jobs no linux utilizando o crontab. 
 
 ## Motivações
-A principal motivação deste projeto foi apresentar para minha turma de Ciência da Computação como trabalhar com scripts bash e 
-utilizr o cron do linux.
+A principal motivação deste projeto foi apresentar para minha turma de Ciência da Computação como trabalhar com scripts bash e utilizar o cron do linux.
 
 <!-- ROADMAP OF PROJECT -->
 
